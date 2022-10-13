@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.main-visual{
+    position: relative;
+}
+
+.main-visual__title{
+    position: absolute;
+    font-weight: $bold;
+    font-size: rem(30);
+    line-height: 1;
+    color: $white;
+    text-align: center;
+    top: 50.5%;
+    letter-spacing: 0.075em;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    @include mq(md){
+        font-size: rem(35);
+        top:49.5%;
+        letter-spacing: 0.05em;
+    }
+}

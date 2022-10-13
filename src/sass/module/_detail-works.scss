@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.detail-works{
+    margin-top: rem(53);
+    @include mq(md){
+        margin-top: rem(91);
+    }
+}
+
+.detail-works__inner{
+    padding-left: rem(20);
+    padding-right: rem(20);
+}
+
+.detail-works__inner{
+    max-width:rem(840);
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: rem(20);
+    padding-right: rem(20);
+}
+
+
+.detail-works__contents{
+    margin-top: rem(56);
+    @include mq(md){
+        margin-top: rem(103);
+    }
+}
+
+
+
+
+
+
+
+
+
+

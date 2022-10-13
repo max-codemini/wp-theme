@@ -1,0 +1,100 @@
+@use "global" as *;
+
+.article{
+    background-color: $bg;
+    @include mq(md){
+        width:100%;
+        max-width: rem(510);
+    }
+}
+
+.article__inner{
+    padding-left: rem(20);
+    padding-right: rem(20);
+    @include mq(md){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.article__title{
+    color:$white;
+    font-size: rem(20);
+    font-weight: $regular;
+    letter-spacing: 0.1em;
+    text-align: center;
+    @include mq(md){
+        font-size: rem(25);
+        text-align: left;
+    }
+}
+
+.article__title--works{
+    padding-left: rem(20);
+    @include mq(md){
+        padding-left: 0;
+        letter-spacing: 0.02em;
+    }
+}
+
+.article__title--overview{
+    padding-left: rem(17);
+    @include mq(md){
+        padding-left: 0;
+        letter-spacing: 0.02em;
+    }
+}
+
+.article__text{
+    color:$white;
+    font-size: rem(16);
+    font-weight: $regular;
+    @include mq(md){
+        text-align: left;
+    }
+}
+
+.article__text--works{
+    padding-top: rem(22);
+    letter-spacing: 0.125em;
+    line-height: 1.44;
+    @include mq(md){
+        line-height: 2.175;
+        letter-spacing: 0.03em;
+        padding-top: rem(38);
+    }
+}
+
+.article__text--overview{
+    padding-top: rem(23);
+    margin-left: rem(-1);
+    letter-spacing: 0.125em;
+    line-height: 1.44;
+    @include mq(md){
+        line-height: 2.175;
+        letter-spacing: 0.03em;
+        padding-top: rem(37);
+        padding-left: rem(2);
+    }
+}
+
+.article__button{
+    text-align: center;
+    @include mq(md){
+        text-align: left;
+    }
+}
+
+.article__button--works{
+    margin-top: rem(27);
+    @include mq(md){
+        margin-top: rem(49);
+    }
+}
+
+.article__button--overview{
+    margin-top: rem(27);
+    @include mq(md){
+        margin-top: rem(49);
+    }
+}

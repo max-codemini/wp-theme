@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.topics{
+    color: $white;
+    @include mq(md){
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.topics__meta{
+    display: flex;
+    align-items: center;
+}
+
+.topics__date{
+    font-size: rem(16);
+    font-weight: $regular;
+    letter-spacing: 0.02em;
+    @include mq(md){
+        padding-top: rem(4);
+    }
+}
+
+.topics__category{
+    margin-left: rem(32);
+    @include mq(md){
+        margin-left: rem(48);
+    }
+}
+
+.topics__category span{
+    font-size: rem(14);
+    font-weight: $regular;
+    padding:rem(6) rem(21) rem(3) rem(20); 
+    border: 1px solid $white;
+    @include mq(md){
+        padding: rem(5) rem(20) rem(4) rem(20);
+    }
+}
+
+.topics__link{
+    padding-top: rem(16);
+    @include mq(md){
+        margin-left:rem(61);
+        padding-top: rem(2);
+        max-width: rem(572);
+        width:100%;
+    }
+}
+
+.topics__text{
+    color:$white;
+    font-size: rem(16);
+    letter-spacing: 0;
+    display: inline-block;
+    line-height: 1.45;
+}
+
+.topics__text:hover{
+    color:#F9F871;
+}

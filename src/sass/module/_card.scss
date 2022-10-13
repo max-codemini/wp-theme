@@ -1,0 +1,132 @@
+@use "global" as *;
+
+.card--first{
+    position: relative;//アイコンの位置
+    @include mq(md){
+        margin-top: rem(6);
+    }
+}
+
+.card__icon{
+    background-color: #FFBA6A;
+    width:rem(60);
+    height:rem(60);
+    border-radius: rem(60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:rem(-33);
+    left:rem(-16);
+    z-index: 20;
+    @include mq(md){
+        top:rem(-17);
+        left:rem(-16);
+    }
+}
+
+.card__icon--blog-page{
+    top:rem(-14);
+    @include mq(md){
+        display: none;
+    }
+    
+}
+
+.card__icon span{
+    font-weight: $regular;
+    letter-spacing: 0.15em;
+    padding-left: rem(3);
+    padding-bottom: rem(2);
+    @include mq(md){
+        padding-left: rem(5);
+    }
+}
+
+.card__img{
+    position: relative;
+}
+
+.card__img::before{
+    content: "";
+    display: block;
+    padding-top: 66.567164%;
+}
+
+.card__img--recommend::before{
+    @include mq(md){
+        padding-top: 58.964143%;
+    }
+    
+}
+
+.card__img img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.card__body{
+    padding:rem(4) rem(22) rem(8) rem(23);
+    @include mq(md){
+        padding-top: rem(3);
+        padding-bottom: rem(10);
+    }
+}
+
+.card__title{
+    font-size: rem(18);
+    line-height: 1.95;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    @include mq(md){
+        letter-spacing: 0.065em;
+    }
+}
+
+.card__text{
+    font-size: rem(14);
+    line-height: 1.8571;
+    font-weight: $regular;
+    letter-spacing: 0.075em;
+    padding-top: rem(2);
+    @include mq(md){
+        padding-top: rem(6);
+    }
+}
+
+.card__meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-left: rem(23);
+    padding-right: rem(22);
+    padding-bottom: rem(18);
+    @include mq(md){
+        padding-bottom: rem(16);
+    }
+}
+
+.card__category{
+    font-size: rem(14);
+    letter-spacing: 0.075em;
+    background-color: #FFEA2E;
+    padding: rem(1) rem(2) rem(1) rem(5);
+    @include mq(md){
+        padding-right: rem(5);
+        padding-bottom: rem(3);
+    }
+}
+
+.card__date{
+    font-size: rem(14);
+    letter-spacing: 0.1em;
+    font-weight: $regular;
+}
+
+

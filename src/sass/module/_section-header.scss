@@ -1,0 +1,127 @@
+@use "global" as *;
+
+.section-header__inner{
+    position:relative;
+}
+
+.section-header__title{
+    text-align: center;
+    font-size: rem(20);
+    letter-spacing: 0.1em;
+    line-height: 1;
+    font-weight: $regular;
+    color:$white;
+    @include mq(md){
+        font-size: rem(30);
+        letter-spacing: 0.075em;
+    }
+}
+
+.section-header__title--works{
+    @include mq(md){
+        letter-spacing: 0;
+    }
+}
+
+.section-header__title--overview{
+    @include mq(md){
+        letter-spacing: 0;
+    }
+}
+
+.section-header__title--blog{
+    @include mq(md){
+        letter-spacing: 0;
+    }
+}
+
+
+
+
+.section-header__subtitle{
+    position:absolute;
+    color:#F9F871;
+    opacity: 0.3;
+    font-size: rem(50);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family:$second-font-family;
+    font-weight: $regular;
+    transform:translate(-50%,-100%);
+    @include mq(md){
+        font-size: rem(110);
+        letter-spacing: 0.03em;
+    }
+}
+
+.section-header__subtitle--content{
+    top: 35%;
+    left: 50.5%;
+    @include mq(md){
+        top: -75%;
+        left: 2%;
+        transform:translate(0%,0%);
+    }
+}
+
+.section-header__subtitle--works{
+    top: 35%;
+    left: 50.5%;
+    @include mq(md){
+        top: 77%;
+        right: 1.75%;
+        transform: translate(0%, -50%);
+        text-align: right;
+    }
+}
+
+.section-header__subtitle--overview{
+    top: 45%;
+    left: 50%;
+    @include mq(md){
+        top: -100%;
+        left: 2%;
+        transform:translate(0%,0%);
+    }
+}
+
+.section-header__subtitle--blog{
+    top:35%;
+    left: 50%;
+    @include mq(md){
+        top: 47%;
+        right: -0.25%;
+        transform: translate(0%, -50%);
+        text-align: right;
+    }
+}
+
+.section-header__subtitle--contact{
+    top: 45%;
+    left: 49.5%;
+    @include mq(md){
+        top: -50%;
+        left: 0%;
+        transform:translate(0%,-50%);
+    }
+}
+
+//ブログページ一覧
+.section-header__title--blogpage{
+    font-size: rem(25);
+    padding-left: rem(2);
+    @include mq(md){
+        font-size: rem(30);
+    }
+}
+
+.section-header__subtitle--blogpage{
+    top:62%;
+    left: 49.5%;
+    @include mq(md){
+        top: -50%;
+        left: 0%;
+        transform:translate(0%,-50%);
+        letter-spacing: 0.02em;
+    }
+}

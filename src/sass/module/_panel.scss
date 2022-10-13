@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.panel{
+    border-top:none;
+}
+
+.panel__list{
+    display:none;
+}
+    
+.panel__list.is-show{
+    display:block;
+}

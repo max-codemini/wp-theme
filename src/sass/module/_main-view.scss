@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.main-view{
+    height:100vh;
+}
+
+.main-view__text-block{
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.main-view__title{
+    font-size: rem(28);
+    letter-spacing: 0.02em;
+    line-height: 1;
+    font-weight: bold;
+    padding-left: rem(2);
+    @include mq(md){
+        font-size: rem(50);
+        letter-spacing: 0.01em;
+    }
+}
+
+.main-view__subtitle{
+    font-size: rem(20);
+    letter-spacing: 0.03em;
+    line-height: 1;
+    font-weight: bold;
+    padding-left: rem(2);
+    padding-top: rem(24);
+    @include mq(md){
+        font-size: rem(25);
+        letter-spacing: 0.02em;
+        padding-top: 23px;
+    }
+}

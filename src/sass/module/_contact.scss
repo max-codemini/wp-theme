@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.contact{
+    background-color: $bg;
+}
+
+.contact__body{
+    @include mq(md){
+        text-align: center;
+    }
+}
+
+.contact__text{
+    padding-top: 24px;
+    margin-left: rem(1);
+    letter-spacing: 0.125em;
+    line-height: 1.44;
+    color:$white;
+    font-size: rem(16);
+    font-weight: $regular;
+    @include mq(md){
+        text-align: center;
+        padding-top: rem(25);
+    }
+}
+
+.contact__button{
+    text-align: center;
+    margin-top: rem(47);
+    @include mq(md){
+        margin-top: rem(62);
+    }
+}
+
+
+//ブログ一覧ページ
+
+.contact__text--blogpage{
+    padding-top: rem(21);
+    @include mq(md){
+        padding-top: rem(31);
+        margin-left: rem(16);
+    }
+}
+
+.contact__button--blogpage{
+    margin-top: rem(56);
+}

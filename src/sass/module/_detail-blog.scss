@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.detail-blog{
+    color: $white;
+    margin-top: rem(107);
+}
+
+.detail-blog__breadcrumb{
+    padding-left: rem(20);
+    padding-right: rem(20);
+    max-width: rem(800);
+    width:100%;
+}
+
+.detail-blog__inner{
+    width: 100%;
+    max-width: rem(820);
+    margin: auto;
+    @include mq(md){
+        padding-left: rem(20);
+        padding-right: rem(20);
+    }
+}
+
+.detail-blog__text-inner{
+    padding-left: rem(20);
+    padding-right: rem(20);
+    @include mq(md){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.detail-blog__text-inner{
+    padding-left: rem(20);
+    padding-right: rem(20);
+    @include mq(md){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.detail-blog__sub-title{
+    font-weight: $regular;
+    font-size: rem(20);
+}
+
+.detail-blog__sub-title--02{
+    border-left: 3px solid #C4C4C4;
+    padding-left: rem(9);
+    margin-top: rem(32);
+}
+
+.detail-blog__sub-title--03{
+    border-bottom: 3px solid #FFEA2E;
+    border-image: linear-gradient(to right, #FFEA2E 0%, #FFEA2E 40%,#C4C4C4 40% ,#C4C4C4 100%);
+    border-image-slice: 1;
+    padding-left: rem(9);
+    margin-top: rem(32);
+    display: inline-block;
+}
+
+
+.detail-blog__text{
+    margin-top: rem(24);
+    font-weight: $regular;
+    letter-spacing: 0.05em;
+}
+
+
+.detail-blog__img{
+    position: relative;
+    margin-top: rem(32);    
+}
+
+.detail-blog__img::before{
+    content: "";
+    display: block;
+    padding-top: 66.933333333333333333%;//比率
+	}
+
+.detail-blog__img img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    object-fit: cover;
+		object-position:center;
+}
+
+.detail-blog__lists{
+    margin-top: rem(24);
+    font-weight: $regular;
+    padding-left: rem(20);
+    padding-right: rem(20);
+    @include mq(md){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.detail-blog__list{
+    line-height: 2;
+    margin-top: rem(10);
+    font-weight: $regular;
+}

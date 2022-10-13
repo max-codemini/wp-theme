@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.breadcrumb{
+    color: $white;
+    font-weight: $regular;
+    max-width: rem(1140);
+    width:100%;
+    padding-left: rem(20);
+    padding-right: rem(20);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.breadcrumb--news{
+    margin-top: rem(16);
+}
+
+.breadcrumb--content-sub{
+    margin-top: rem(16);
+}
+
+.breadcrumb--overview-sub{
+    margin-top: rem(16);
+}
+
+.breadcrumb--contact-sub{
+    margin-top: rem(16);
+}
+
+.breadcrumb--detail-blog{
+    margin-top: rem(67);
+}
+
+.breadcrumb--detail-works{
+    margin-top: rem(66);
+}
+
+.breadcrumb--archive-blog{
+    margin-top: rem(16);
+}

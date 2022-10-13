@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.not-found{
+    margin-top: rem(80);
+    padding-bottom: rem(120);
+    text-align: center;
+    @include mq(md){
+        margin-top: rem(150);
+        padding-bottom: rem(150);
+    }
+}
+
+.not-found__title{
+    color:#FFEA2E;
+    font-size: rem(40);
+    font-weight: $normal;
+    opacity: 0.3;
+    @include mq(md){
+        font-size: rem(60);
+    }
+}
+
+.not-found__title::before{
+    content: "";
+    width:100%;
+    height:100%;
+    background-color: $black;
+}
+
+.not-found__text{
+    margin-top: rem(80);
+    color:$white;
+    font-weight: $regular;
+    @include mq(md){
+        font-size: rem(40);
+    }
+}
+
+.not-found__button{
+    margin-top: rem(80);
+}

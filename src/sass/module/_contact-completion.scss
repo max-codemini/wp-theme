@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+.contact-completion{
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    @include mq(md){
+        padding-top: rem(150);
+        padding-bottom: rem(150);
+    }
+}
+
+.contact-completion__title{
+    font-size: rem(20);
+    color:$white;
+    font-weight: $regular;
+    text-align: center;
+}
+
+.contact-completion__text{
+    font-size: rem(20);
+    color:$white;
+    font-weight: $regular;
+    text-align: center;
+    margin-top: rem(80);
+}
+
+.contact-completion__button{
+    margin-top: rem(80);
+    text-align: center; 
+}

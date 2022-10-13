@@ -1,0 +1,28 @@
+body {
+	background-color: #111;
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+	display: none;
+}
+
+.news-pagenavi {
+	margin-top: 104px;
+	margin-top: 6.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
+}
+
+}
+
+
+/*# sourceMappingURL=news-pagenavi.css.map */

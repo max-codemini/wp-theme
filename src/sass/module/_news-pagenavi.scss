@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.news-pagenavi{
+    display: none;
+    @include mq(md){
+        display: block;
+        margin-top: rem(104);
+    }
+}

@@ -1,0 +1,48 @@
+@use "global" as *;
+.card-works{
+    position: relative;
+}
+
+.card-works__img{
+    position: relative;
+}
+
+.card-works__img::before{
+    content: "";
+    display: block;
+    padding-top: 66.258667%;
+    @include mq(md){
+        padding-top: 75.428571%;
+    }
+}
+
+.card-works__img img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.card-works__category{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: $black;
+    letter-spacing: 0.3em;
+    color: $white;
+    font-weight: $regular;
+    padding:rem(8) rem(20) rem(9);
+}
+
+.card-works__title{
+    color: $white;
+    text-align: center;
+    font-size: rem(20);
+    margin-top: rem(24);
+    font-weight: $normal;
+    letter-spacing: 0.1em;
+}

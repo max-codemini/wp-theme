@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.sub-mySwiper2{
+    margin-top: rem(16);
+    max-width: rem(800);
+    width:100%;
+}
+
+.mySwiper2__wrapper{
+    transition-timing-function: linear;
+}
+
+.mySwiper2__slide{
+    position: relative;
+}
+
+.mySwiper2__slide::before{
+    content: "";
+    display: block;
+    padding-top: 66.9333333333%;//比率
+	}
+
+.mySwiper2__slide img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    object-fit: cover;
+		object-position:center;
+}
+
+.mySwiper2__button-prev{
+    background-color: $black;
+    position:absolute;
+    top:50%;
+    left:rem(23);
+    transform: translateX(-50%);
+    width:rem(30);
+    height:rem(30);
+    border-radius: rem(50);
+    @include mq(md){
+        width:rem(50);
+        height:rem(50);
+        left: rem(33);
+    }
+}
+
+.mySwiper2__button-prev::after{
+    width: rem(13);
+    height:rem(13);
+    border-top: 3px solid #FFEA2E;
+    border-right: 3px solid #FFEA2E;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    display: block;
+    margin-left: rem(6);
+    @include mq(md){
+        width: rem(20);
+        height:rem(20);
+    }
+}
+
+.mySwiper2__button-next{
+    background-color: $black;
+    position:absolute;
+    top:50%;
+    right:rem(-7);
+    transform: translateX(-50%);
+    width:rem(30);
+    height:rem(30);
+    border-radius: rem(50);
+    @include mq(md){
+        width:rem(50);
+        height:rem(50);
+        right: rem(-17);
+    }
+}
+
+.mySwiper2__button-next::after{
+    width: rem(13);
+    height:rem(13);
+    border-top: 3px solid #FFEA2E;
+    border-right: 3px solid #FFEA2E;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+    margin-right: rem(6);
+    @include mq(md){
+        width: rem(20);
+        height:rem(20);
+    }
+}

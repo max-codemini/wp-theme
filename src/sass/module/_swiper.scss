@@ -1,0 +1,80 @@
+@use 'global' as *;
+
+@-webkit-keyframes zoomUp {
+    0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    }
+    }
+    
+    @keyframes zoomUp {
+    0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    }
+    }
+    
+    .swiper-slide-active .swiper-img,
+    .swiper-slide-duplicate-active .swiper-img,
+    .swiper-slide-prev .swiper-img {
+    -webkit-animation: zoomUp 12s linear 0s;
+    animation: zoomUp 12s linear 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    .swiper-slide {
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+    .swiper-img {
+    background-position: top center;
+    height:100vh;
+    position: relative;
+    object-fit: cover;
+    }
+    
+    /* 画像を暗くするオーバーレイ */
+    .swiper-img::before {
+    content: '';
+    /* ↓暗いオーバーレイを半透明で配置 */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* ↓全体を覆うように配置 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    }
+
+// SWIPER(works)
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom:rem(-21);
+    left:rem(-1);
+    @include mq(md){
+        bottom: rem(-30);
+        left: rem(-21);
+    }
+}   
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin:0 rem(5.5);
+}
+
+.swiper-pagination-bullet{
+    background-color: #C4C4C4;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #F9F871;
+}
