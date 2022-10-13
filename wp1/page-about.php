@@ -40,5 +40,5 @@ $news_query = new WP_Query(
 		<p>処理内容</p>
 	<?php endwhile; ?>
 <?php endif; ?>
-<?php wp_reset_postdata(); ?>　
+<?php wp_reset_postdata(); ?>
 <?php get_footer(); ?>
