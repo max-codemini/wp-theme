@@ -1,7 +1,7 @@
         <footer class="footer">
             <div class="footer__inner">
                 <div class="footer__title">
-                <a href="#" class="footer__logo">
+                <a href="<?php echo $home ?>" class="footer__logo">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/CodeUps.svg" alt="" /> 
                 </a><!-- /.footer__logo -->
                 </div><!-- /.footer__logo -->

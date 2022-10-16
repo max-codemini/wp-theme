@@ -177,7 +177,7 @@ $myquery = new WP_Query( $args );
                 <p class="contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p><!-- /.article__text -->
                 <div class="contact__button">
                 <a href="<?php echo $contact ?>" class="button button--contact">
-                    <span>お問い合わせへ</span>
+                    <span>お問い合わせ</span>
                 </a><!-- /.c-button -->
                 </div>
             </div><!-- /.article -->

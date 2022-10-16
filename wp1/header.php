@@ -38,11 +38,20 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php
+$home = esc_url( home_url('/'));
+$news = esc_url( home_url('news'));
+$content = esc_url( home_url('content'));
+$works = esc_url( home_url('works'));
+$overview = esc_url( home_url('overview'));
+$blog = esc_url( home_url('blog'));
+$contact = esc_url( home_url('contact'));
+?>
   <?php wp_body_open(); ?>
   <header class="header">
       <div class="header__inner js-header">
         <h1 class="header__title">
-          <a href="#" class="header__logo">
+          <a href="<?php echo $home ?>" class="header__logo">
             <picture>
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/CodeUps_pc.svg" media="(min-width: 768px)" alt="CodeUps"><!-- 幅768px以上なら表示 -->
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/CodeUps.svg" alt="CodeUps">
@@ -143,15 +152,7 @@ wp_nav_menu( $defaults );
 ?>
 
 
-<?php
-$home = esc_url( home_url('/'));
-$news = esc_url( home_url('news'));
-$content = esc_url( home_url('content'));
-$works = esc_url( home_url('works'));
-$overview = esc_url( home_url('overview'));
-$blog = esc_url( home_url('blog'));
-$contact = esc_url( home_url('contact'));
-?>
+
 
 
           <!-- <ul class="sp-nav__items">
